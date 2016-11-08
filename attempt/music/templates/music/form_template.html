@@ -1,0 +1,100 @@
+
+ <head>
+<style>
+
+.row
+{width:450px;
+border-color:#00C;
+
+}
+input {
+    width: 415px;
+    height: 40px;
+}
+#apDiv1 {
+	position: absolute;
+	left: 500px;
+	top: 120px;
+	width: 304px;
+	height: 20px;
+	z-index: 1;
+	
+	
+}
+label {
+color: #009;
+font-weight: bold;
+display: block;
+width: 150px;
+float: left;
+}
+label:after { content: ": " }
+td
+{
+	padding:3px 0
+}
+table tr
+{
+	border-bottom: 13px solid transparent;
+}
+.panel-heading
+{
+	background:#00C;
+	
+}
+.bs-component
+{margin:4px;
+}
+</head>
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+                      <script type="text/javascript" >
+    $(document).ready(function(){
+        $("#id_username").attr('placeholder', '{{form.username.label}}');
+        $("#id_password").attr('placeholder', '{{form.password.label}}');
+        $("#id_email").attr('placeholder', '{{form.email.label}}');
+    });
+              </script>
+
+
+<div id="apDiv1">
+    <div class="row">
+        
+            
+                    <h3 class="panel-title">Register</h3>
+                </div>
+                <div class="panel-body">
+<p class="bs-component">
+                            <table style="width:270px;">
+
+                              <tr>
+    
+                            
+                               <td> <label>username</label>{{ form.username }}</td>
+                              
+</tr>
+                              <tr>
+    
+                            
+                               <td> <label>Email</label>{{ form.email }}</td>
+                              
+</tr>
+
+                              <tr>
+    
+                             
+                               <td> <label>password</label>{{ form.password }}</td>
+                              
+</tr>
+                              
+                            
+</table>
+                        </p>
+                        <p class="bs-component">
+
+           
+                </div>
+            </div>
+    </div>
+</div>
+
