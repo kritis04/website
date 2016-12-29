@@ -1,0 +1,108 @@
+
+ <head>
+<style>
+
+.row
+{width:450px;
+border-color:#00C;
+
+}
+input {
+    width: 400px;
+    height: 40px;
+    font-family: "Helvetica Neue";
+    border-radius: 3px;
+    border: 1.5px solid ;
+    border-color: #00ace6;
+    background: #fff;
+}
+input[placeholder] {
+    font-size: 25px;
+}
+#apDiv1 {
+	position: absolute;
+	left: 860px;
+	top: 120px;
+	
+	
+	
+}
+
+
+td
+{
+	padding:6px 0
+}
+table tr
+{
+	border-bottom: 13px solid transparent;
+}
+.login-panel
+{
+width:350px;
+} 
+.panel-heading
+{
+	background:#fff;
+	
+}
+.bs-component
+{margin:4px;
+}
+</head>
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+                      <script type="text/javascript" >
+   
+              </script>
+
+
+<div id="apDiv1">
+    <div class="row">
+        
+             <div class="login-panel panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Log In</h3>
+                </div>
+                <div class="panel-body">
+<p class="bs-component">
+                            <table style="width:170px;">
+
+                              <tr>
+    
+                            
+                               <td>{{ form.firstname }}</td>
+                              
+</tr>
+                             <td>{{ form.lastname }}</td>
+                              <tr>
+    
+                            
+                               <td>{{ form.username }}</td>
+                              
+</tr>
+                              <tr>
+    
+                            
+                               <td>{{ form.email }}</td>
+                              
+</tr>
+
+                              <tr>
+    
+                             
+                               <td> {{ form.password }}</td>
+                              
+</tr>
+                              
+                            
+</table>
+                        </p>
+                        <p class="bs-component">
+
+           
+                </div>
+            </div>
+    </div>
+</div>
+
